@@ -50,7 +50,7 @@ function addToCart() {
               ? 'text-blue-600 border-b-2 border-blue-600'
               : 'text-gray-700 hover:text-blue-600'">
             <ShoppingCart class="w-5 h-5" />
-            Cart ({{ count }})
+            Cart {{ count === 0 ? "" : count }}
           </div>
         </RouterLink>
       </nav>
